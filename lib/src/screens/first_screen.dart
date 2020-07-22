@@ -51,7 +51,7 @@ class FirstScreen extends StatelessWidget {
         Expanded(
           flex: 6,
           child: Container(
-              padding: EdgeInsets.only(top: 10.0),
+              padding: EdgeInsets.only(top: 2.0),
               height: MediaQuery.of(context).size.height - 158,
               decoration: BoxDecoration(
                   color: Colors.white,
