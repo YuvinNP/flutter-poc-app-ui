@@ -1,6 +1,6 @@
-import 'package:awesome_flutter_1/src/custom_widgets/food_item.dart';
-import 'package:awesome_flutter_1/src/utils/constans.dart';
-import 'package:awesome_flutter_1/src/utils/themes.dart';
+import '../../src/custom_widgets/food_item.dart';
+import '../../src/utils/constants.dart';
+import '../../src/utils/themes.dart';
 import 'package:flutter/material.dart';
 
 class FirstScreen extends StatelessWidget {
@@ -118,7 +118,7 @@ class FirstScreen extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         ButtonTheme(
                           minWidth: 65.0,

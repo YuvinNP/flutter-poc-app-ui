@@ -47,12 +47,11 @@ class FoodItem extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      '\n \$\ $price',
+                      '\$$price',
                       style: TextStyle(
-                          color: Colors.black,
+                          color: Colors.grey,
                           fontSize: 17.0,
                           fontFamily: "Montserrat",
-                          fontWeight: FontWeight.bold
                       ),
                     )
                   ],
