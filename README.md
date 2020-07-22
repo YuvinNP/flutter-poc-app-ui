@@ -1,4 +1,4 @@
-# awesome_flutter_1
+# flutter POC in UI implementations
 
 A new Flutter application.
 
