@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../src/custom_widgets/food_item.dart';
-import '../../src/utils/constants.dart';
 import '../../src/utils/themes.dart';
+import '../../src/utils/utility.dart';
 
 class FirstScreen extends StatelessWidget {
   @override
@@ -60,60 +60,19 @@ class FirstScreen extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   Expanded(
-                    child: ListView(
-                      primary: false,
-                      padding: EdgeInsets.only(left: 25.0, right: 20.0),
-                      children: <Widget>[
-                        Padding(
-                          padding: EdgeInsets.only(top: 20.0),
-                          child: FoodItem(
-                            foodName: "Salmon Bowl",
-                            imagePath: ImagePathConstants.IMAGE_PATH_PLATE_1,
-                            price: 24.00,
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(top: 20.0),
-                          child: FoodItem(
-                            foodName: "Food Item 2",
-                            imagePath: ImagePathConstants.IMAGE_PATH_PLATE_6,
-                            price: 24.00,
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(top: 20.0),
-                          child: FoodItem(
-                            foodName: "Food Item 3",
-                            imagePath: ImagePathConstants.IMAGE_PATH_PLATE_1,
-                            price: 24.00,
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(top: 20.0),
-                          child: FoodItem(
-                            foodName: "Food Item 4",
-                            imagePath: ImagePathConstants.IMAGE_PATH_PLATE_5,
-                            price: 24.00,
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(top: 20.0),
-                          child: FoodItem(
-                            foodName: "Food Item 5",
-                            imagePath: ImagePathConstants.IMAGE_PATH_PLATE_6,
-                            price: 24.00,
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(top: 20.0),
-                          child: FoodItem(
-                            foodName: "Food Item 5",
-                            imagePath: ImagePathConstants.IMAGE_PATH_PLATE_6,
-                            price: 24.00,
-                          ),
-                        ),
-                      ],
-                    ),
+                    child: ListView.builder(
+                        padding: EdgeInsets.only(left: 25.0, right: 25.0),
+                        itemCount: 3,
+                        itemBuilder: (BuildContext context, int index) {
+                          return Padding(
+                            padding: EdgeInsets.only(top: 20.0),
+                            child: FoodItem(
+                              foodName: Utility.itemNames[index],
+                              price: Utility.itemPrice[index],
+                              imagePath: Utility.imagePath[index],
+                            ),
+                          );
+                        }),
                   ),
                   Padding(
                     padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
