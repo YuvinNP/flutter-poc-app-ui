@@ -1,7 +1,7 @@
+import 'package:flutter/material.dart';
 import '../../src/custom_widgets/food_item.dart';
 import '../../src/utils/constants.dart';
 import '../../src/utils/themes.dart';
-import 'package:flutter/material.dart';
 
 class FirstScreen extends StatelessWidget {
   @override

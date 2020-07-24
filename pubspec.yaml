@@ -64,9 +64,9 @@ flutter:
    - family: Montserrat
      fonts:
        - asset: assets/font/Montserrat-Regular.ttf
-  #   - family: Helvetica
-  #     fonts:
-  #       - asset: assets/font/Helvetica-Regular.ttf
+   - family: Helvetica
+     fonts:
+       - asset: assets/font/Helvetica-Regular.ttf
 
   #   - family: Trajan Pro
   #     fonts:
