@@ -1,4 +1,6 @@
 
+import 'package:flutter/material.dart';
+
 class ImagePathConstants {
 
   static const String IMAGE_PATH_PLATE_1 = "assets/images/plate1.png";
@@ -7,4 +9,13 @@ class ImagePathConstants {
   static const String IMAGE_PATH_PLATE_4 = "assets/images/plate4.png";
   static const String IMAGE_PATH_PLATE_5 = "assets/images/plate5.png";
   static const String IMAGE_PATH_PLATE_6 = "assets/images/plate6.png";
+}
+
+class StyleConstants {
+
+  static const TextStyle PRIMARY_STYLE = TextStyle(
+      fontSize: 15.0,
+      color: Colors.black,
+      fontFamily: "Montserrat",
+      fontWeight: FontWeight.bold);
 }
